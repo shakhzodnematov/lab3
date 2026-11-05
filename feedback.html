@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Course Feedback Form</title>
+</head>
+<body>
+    <h2>Student Course Feedback Form</h2>
+    <form action="#" method="POST">
+        <label for="student_name">Student Name:</label><br>
+        <input type="text" id="student_name" name="student_name" required><br><br>
+
+        <label for="course_name">Course Name:</label><br>
+        <select id="course_name" name="course_name" required>
+            <option value="">--Select Course--</option>
+            <option value="Web Programming">Web Programming</option>
+            <option value="Basic ICT">Basic ICT</option>
+            <option value="Programming">Programming</option>
+            <option value="Database">Database</option>
+        </select><br><br>
+
+        <label>Teaching Satisfaction:</label><br>
+        <input type="radio" id="excellent" name="satisfaction" value="Excellent" required>
+        <label for="excellent">Excellent</label><br>
+        <input type="radio" id="good" name="satisfaction" value="Good">
+        <label for="good">Good</label><br>
+        <input type="radio" id="fair" name="satisfaction" value="Fair">
+        <label for="fair">Fair</label><br>
+        <input type="radio" id="poor" name="satisfaction" value="Poor">
+        <label for="poor">Poor</label><br><br>
+
+        <label>Preferred Learning Materials:</label><br>
+        <input type="checkbox" id="slides" name="materials" value="Lecture Slides">
+        <label for="slides">Lecture Slides</label><br>
+        <input type="checkbox" id="videos" name="materials" value="Videos">
+        <label for="videos">Videos</label><br>
+        <input type="checkbox" id="exercises" name="materials" value="Exercises">
+        <label for="exercises">Exercises</label><br>
+        <input type="checkbox" id="quizzes" name="materials" value="Quizzes">
+        <label for="quizzes">Quizzes</label><br><br>
+
+        <label for="sat_rating">Satisfaction Rating (1 to 5):</label><br>
+        <input type="range" id="sat_rating" name="sat_rating" min="1" max="5"><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+        <button type="reset">Clear Feedback</button>
+    </form>
+</body>
+</html>

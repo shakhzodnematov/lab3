@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Innovation Day Registration</title>
+</head>
+<body>
+    <h2>Tech Innovation Day Registration Form</h2>
+    <form action="#" method="POST">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Student Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Participation Category:</label><br>
+        <input type="radio" id="participant" name="category" value="Participant" required>
+        <label for="participant">Participant</label><br>
+        <input type="radio" id="volunteer" name="category" value="Volunteer">
+        <label for="volunteer">Volunteer</label><br>
+        <input type="radio" id="committee" name="category" value="Committee Member">
+        <label for="committee">Committee Member</label><br><br>
+
+        <label>Preferred Activities:</label><br>
+        <input type="checkbox" id="web_dev" name="activities" value="Web Development">
+        <label for="web_dev">Web Development</label><br>
+        <input type="checkbox" id="ai" name="activities" value="Artificial Intelligence">
+        <label for="ai">Artificial Intelligence</label><br>
+        <input type="checkbox" id="cyber" name="activities" value="Cybersecurity">
+        <label for="cyber">Cybersecurity</label><br><br>
+
+        <label for="programme">Programme:</label><br>
+        <select id="programme" name="programme" required>
+            <option value="">--Select Programme--</option>
+            <option value="Foundation in Computing">Foundation in Computing</option>
+            <option value="Foundation in Arts">Foundation in Arts</option>
+        </select><br><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

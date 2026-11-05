@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Appointment System</title>
+</head>
+<body>
+    <h2>University Health Centre - Medical Appointment Form</h2>
+    <form action="#" method="POST">
+        <label for="student_name">Student Name:</label><br>
+        <input type="text" id="student_name" name="student_name" required><br><br>
+
+        <label for="student_id">Student ID:</label><br>
+        <input type="text" id="student_id" name="student_id" required><br><br>
+
+        <label for="contact">Contact Number:</label><br>
+        <input type="tel" id="contact" name="contact" required><br><br>
+
+        <label for="appt_date">Appointment Date:</label><br>
+        <input type="date" id="appt_date" name="appt_date" required><br><br>
+
+        <label for="appt_time">Appointment Time:</label><br>
+        <input type="time" id="appt_time" name="appt_time" required><br><br>
+
+        <label>Reason for Appointment:</label><br>
+        <input type="radio" id="general" name="reason" value="General Check-up" required>
+        <label for="general">General Check-up</label><br>
+        <input type="radio" id="dental" name="reason" value="Dental Check-up">
+        <label for="dental">Dental Check-up</label><br>
+        <input type="radio" id="consultation" name="reason" value="Consultation">
+        <label for="consultation">Consultation</label><br><br>
+
+        <label for="additional_info">Additional Information:</label><br>
+        <textarea id="additional_info" name="additional_info" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Book Appointment</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>
